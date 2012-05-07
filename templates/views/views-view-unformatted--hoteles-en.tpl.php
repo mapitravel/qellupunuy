@@ -6,8 +6,8 @@
  * @ingroup views_templates
  */
 ?>
-<ul>
+<table class="simple-prices">
 <?php foreach ($rows as $id => $row): ?>
   <?php print $row; ?>
 <?php endforeach; ?>
-</ul>
+</table>

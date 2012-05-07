@@ -37,12 +37,19 @@
 	color: #FFF;
 }
 
+table {
+  border: 0 !important;
+}
+
+table.simple-prices td,
+table.simple-prices th {
+  border: 0 !important;
+}
+
 .simple-item {
 	margin: 0;
 	list-style-image: none;
 	list-style-type: none;
-	font-size: 13px;
-	padding: 2px 10px;
 	border-bottom: 1px solid #cdcaca;
 }
 
@@ -50,19 +57,22 @@
 	background: #f3f3f3;
 }
 
+.simple-item td,
+.simple-item th {
+  padding: 1px 0 !important;
+}
+
 .simple-stars {
   background: url("../images/simple-estrellas.png") no-repeat;
-  width: 70px;
+  width: 50px;
   height: 8px;
   padding: 0;
 	display: inline-block;
 	font-weight: bold;
 }
 
-.simple-name {
-	font-weight: bold;
-	font-size: 14px;
-  width: 155px;
+.simple-stars-data {
+  width: 50px;
 }
 
 .simple-stars em {
@@ -85,12 +95,16 @@
         background-position: 0 0px;
 }
 
-.simple-price {
-        font: 13px/1.2em 'Open Sans', Arial, sans-serif;
-        color: #749536;
-        width: 75px;
+.simple-name {
+	font-weight: bold;
+	font-size: 12px;
+  width: 195px;
 }
 
+.simple-price {
+  font-size: 12px;
+  color: #749536;
+}
 
 /* welcome */
 #welcome {
