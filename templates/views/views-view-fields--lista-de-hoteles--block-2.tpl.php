@@ -51,7 +51,7 @@
 				<ul>
 					<li class="hotel-stars hotel-stars-<?php print $stars; ?>" title="<?php print $categoria; ?>"><span><?php print $categoria; ?></span></li>
 					<li class="hotel-price"><?php print $price; ?></li>
-					<li class="hotel-actions"><a class="button" href="<?php print $path; ?>" title="Reservar <?php print strip_tags($title); ?>">Reservar</a></li>
+					<li class="hotel-actions"><a class="button" href="<?php print $path; ?>" title="<?php print t('Book'); ?> <?php print strip_tags($title); ?>"><?php print t('Book now!'); ?></a></li>
 				</ul>
 			</div>
 		</div>

@@ -39,12 +39,12 @@
 	<a href="<?php print $link; ?>" class="share">Compartir
 	<span class="noticia-social">
     <span class="node-social">
-      <g:plusone size="medium" href="<?php print $link; ?>"></g:plusone>
+      <g:plus action="share" annotation="bubble" height="15" href="<?php print $link; ?>"></g:plus>
     </span>
     <span class="node-social">
       <fb:like href="<?php print $link; ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like>
     </span>
-    <span class="node-social"><!--a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $link; ?>" data-count="horizontal" data-via="MapiTravel4All" data-lang="es" data-text="<?php print strip_tags($title); ?>">Tweet</a--></span>
+    <span class="node-social"><!--a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $link; ?>" data-count="horizontal" data-via="MapiTravel4All" data-lang="<?php print $GLOBALS['twlang']; ?>" data-text="<?php print strip_tags($title); ?>">Tweet</a--></span>
   </span>
 </a>
   </p>

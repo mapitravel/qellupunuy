@@ -48,22 +48,22 @@
 		</div>
 		<div class="hotel-body">
 			<p><?php print $body; ?></p>
-            <div class="hotel-socials">
-                <ul>
-                    <li class="hotel-social po"><g:plusone size="medium" href="<?php print $path; ?>"></g:plusone></li>
-                    <li class="hotel-social fb"><fb:like href="<?php print $path; ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like></li>
-                    <li class="hotel-social tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $path; ?>" data-count="horizontal" data-via="MapiTravel4All" data-lang="es" data-text="<?php print strip_tags($title); ?>">Tweet</a></li>
-                </ul>
-			</div>
+      <div class="hotel-socials">
+        <ul>
+          <li class="hotel-social po"><g:plus action="share" annotation="bubble" height="15" href="<?php print $path; ?>"></g:plus></li>
+          <li class="hotel-social fb"><fb:like href="<?php print $path; ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like></li>
+          <li class="hotel-social tw"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $path; ?>" data-count="horizontal" data-via="Hoteles_Peru" data-lang="<?php print $GLOBALS['twlang']; ?>" data-text="<?php print strip_tags($title); ?>">Tweet</a></li>
+        </ul>
+      </div>
 		</div>
-        <div class="hotel-meta">
-            <ul>
-                <li class="hotel-stars hotel-stars-<?php print $stars; ?>" title="<?php print $categoria; ?>"><span><?php print $categoria; ?></span></li>
-                <li class="hotel-price"> Desde:<br /><?php print $price; ?></li>
-                <li class="hotel-actions"><a class="button" href="<?php print $path; ?>" title="Reservar <?php print strip_tags($title); ?>">Reservar</a></li>
-                <li class="hotel-actions"><a class="button" href="<?php print $path; ?>" title="Ver <?php print strip_tags($title); ?>">Ver &eacute;ste hotel</a></li>
-            </ul>
-        </div>
+    <div class="hotel-meta">
+    <ul>
+      <li class="hotel-stars hotel-stars-<?php print $stars; ?>" title="<?php print $categoria; ?>"><span><?php print $categoria; ?></span></li>
+      <li class="hotel-price"> <?php print t('From:'); ?><br /><?php print $price; ?></li>
+      <li class="hotel-actions"><a class="button" href="<?php print $path; ?>" title="<?php print t('Book'); ?> <?php print strip_tags($title); ?>"><?php print t('Book now!'); ?></a></li>
+      <li class="hotel-actions"><a class="button" href="<?php print $path; ?>" title="<?php print t('View'); ?> <?php print strip_tags($title); ?>"><?php print t('Show this hotel'); ?></a></li>
+    </ul>
+    </div>
 	</div>
 </div>
 <div class="clear"></div>

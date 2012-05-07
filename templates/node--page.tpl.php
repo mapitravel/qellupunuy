@@ -96,27 +96,31 @@
     <div class="content"<?php print $content_attributes; ?>>
       <div id="tour-bar">
         <div class="bar-social">
-          <h5>Comparte:</h5>
+          <h5><?php print t('Share:'); ?></h5>
           <ul>
             <li class="social">
-              <g:plusone size="medium" href="<?php print $path; ?>"></g:plusone>
+              <g:plus action="share" annotation="bubble" height="15" href="<?php print $path; ?>"></g:plus>
             </li>
             <li class="social">
               <fb:like href="<?php print $path; ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like>
             </li>
-            <li class="social"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $path; ?>" data-count="horizontal" data-via="MapiTravel4All" data-lang="es">Tweet</a></li>
+            <li class="social"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $path; ?>" data-count="horizontal" data-via="Hoteles_Peru" data-lang="<?php print $GLOBALS['twlang']; ?>">Tweet</a></li>
           </ul>
         </div>
-        <?php if(isset($field_langen['und']) || isset($field_langbr['und'])) : ?>
         <div class="bar-langs">
-          <h5>Disponible tambi&eacute;n en:</h5>
-          <!-- $field_langxx se cambia según el campo lenguaje del nodo, o el idioma del sitio -->
+          <h5><?php print t('Also available in:'); ?></h5>
           <ul>
-            <li><a href="<?php print $field_langen['und'][0]['value'];?>"><img class="lang-en" src="http://media.perunoticias.net/images/iconos/flag-lang-en.png" /> English</a></li>
-            <li><a href="<?php print $field_langbr['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> Portugu&ecirc;s</a></li>
+            <?php if(isset($field_en['und'][0]['value'])) : ?>
+            <li><a href="<?php print $field_en['und'][0]['value'];?>"><img class="lang-en" src="http://media.perunoticias.net/images/iconos/flag-lang-en.png" /> <?php print t('English'); ?></a></li>
+            <?php endif; ?>
+            <?php if(isset($field_br['und'][0]['value'])) : ?>
+            <li><a href="<?php print $field_br['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> <?php print t('Portuguese'); ?></a></li>
+            <?php endif; ?>
+            <?php if(isset($field_es['und'][0]['value'])) : ?>
+            <li><a href="<?php print $field_es['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> <?php print t('Spanish'); ?></a></li>
+            <?php endif; ?>
           </ul>
         </div>
-        <?php endif; ?>
       </div>
       <?php
       // We hide the comments and links now so that we can render them later.

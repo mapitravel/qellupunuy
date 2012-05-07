@@ -105,32 +105,37 @@
 	<?php endif; ?>
 	<div id="tour-bar">
       	<div class="bar-reserva">
-        	<h5>&iquest;Deseas reservar?</h5>
-            <a href="/sites/all/themes/qellupunuy/chats/chat.php" class="button action live-chat">&iexcl;Chatea ahora!</a>
-            <a href="http://media.perunoticias.net/html/skype.html" class="button no-action live-skype">&iexcl;Ll&aacute;manos ahora!</a>
-            <a href="/reservas-hoteles-peru?hotel=<?php print ($node_url); ?>" class="button no-action">Reserva ahora</a>
+        	<h5><?php print t('Book now!'); ?></h5>
+            <a href="/sites/all/themes/qellupunuy/chats/chat.php" class="button action live-chat"><?php print t('Chat now!'); ?></a>
+            <a href="http://media.perunoticias.net/html/skype.html" class="button no-action live-skype"><?php print t('Call us!'); ?></a>
+            <a href="/reservas-hoteles-peru?hotel=<?php print ($node_url); ?>" class="button no-action"><?php print t('Book now!'); ?></a>
         </div>
         <div class="bar-social">
-          <h5>Comparte el hotel:</h5>
+          <h5><?php print t('Share this hotel:') ?></h5>
           <ul>
             <li class="social">
-              <g:plusone size="medium" href="<?php print $path; ?>"></g:plusone>
+              <g:plus action="share" annotation="bubble" height="15" href="<?php print $path; ?>"></g:plus>
             </li>
             <li class="social">
               <fb:like href="<?php print $path; ?>" send="false" layout="button_count" width="100" show_faces="false"></fb:like>
             </li>
-            <li class="social"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $path; ?>" data-count="horizontal" data-via="Hoteles_Peru" data-lang="es">Tweet</a></li>
+            <li class="social"><a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php print $path; ?>" data-count="horizontal" data-via="Hoteles_Peru" data-lang="<?php print $GLOBALS['twlang']; ?>">Tweet</a></li>
           </ul>
         </div>
-        <?php if(isset($content['field_langen'])): ?>
         <div class="bar-langs">
-          <h5>Disponible tambi&eacute;n en:</h5>
-          <!-- $field_langxx se cambia según el campo lenguaje del nodo, o el idioma del sitio -->
+          <h5><?php print t('Also available in:'); ?></h5>
           <ul>
-            <li><a href="<?php print $field_langen[0]['value'];?>"><img class="lang-en" src="http://media.perunoticias.net/images/iconos/flag-lang-en.png" /> English</a></li>
+            <?php if(isset($field_en['und'][0]['value'])) : ?>
+            <li><a href="<?php print $field_en['und'][0]['value'];?>"><img class="lang-en" src="http://media.perunoticias.net/images/iconos/flag-lang-en.png" /> <?php print t('English'); ?></a></li>
+            <?php endif; ?>
+            <?php if(isset($field_br['und'][0]['value'])) : ?>
+            <li><a href="<?php print $field_br['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> <?php print t('Portuguese'); ?></a></li>
+            <?php endif; ?>
+            <?php if(isset($field_es['und'][0]['value'])) : ?>
+            <li><a href="<?php print $field_es['und'][0]['value'];?>"><img class="lang-br" src="http://media.perunoticias.net/images/iconos/flag-lang-br.png" /> <?php print t('Spanish'); ?></a></li>
+            <?php endif; ?>
           </ul>
         </div>
-        <?php endif; ?>
       </div>
       <?php
       // We hide the comments and links now so that we can render them later.

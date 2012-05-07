@@ -33,6 +33,6 @@
 ?>
 <tr class="simple-item">
   <th class="simple-name"><a href="<?php print $path; ?>"><?php print $title; ?></a></th>
-  <td class="simple-price">Desde <?php print $price; ?></td>
+  <td class="simple-price"><?php print t('From'); ?> <?php print $price; ?></td>
   <td class="simple-stars-data"><span class="simple-stars simple-stars-<?php print $stars; ?>"><em><?php print $categoria; ?></em></span></td>
 </tr>

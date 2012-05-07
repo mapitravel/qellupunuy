@@ -141,6 +141,29 @@ function qellupunuy_preprocess_block(&$variables, $hook) {
 }
 // */
 
+/**
+ * Preprocess variables
+ */
+  global $language;
+  $lang = $language->language;
+  switch ($lang) {
+    case 'es':
+      $GLOBALS['fblang'] = 'es_LA';
+      $GLOBALS['gplang'] = 'es-419';
+      $GLOBALS['twlang'] = 'es';
+    break;
+    case 'en':
+      $GLOBALS['fblang'] = 'en_US';
+      $GLOBALS['gplang'] = '';
+      $GLOBALS['twlang'] = '';
+    break;
+    case 'pt-br':
+      $GLOBALS['fblang'] = 'pt_BR';
+      $GLOBALS['gplang'] = 'pt-BR';
+      $GLOBALS['twlang'] = 'pt';
+    break;
+  }
+
 /*
 	Estilos específicos de la página de inicio
 	Sólo se cargan cuando estamos en <front>
@@ -153,6 +176,23 @@ if(drupal_is_front_page()) {
 	);
   drupal_add_css(drupal_get_path('theme', 'qellupunuy') . "/styles/page-front.css", $options);
   drupal_add_js(drupal_get_path('theme', 'qellupunuy') . "/scripts/page-front.js", array('weight'=>15));
+  
+  $og_attributes = array('og:url', 'og:title', 'og:image', 'og:description', 'fb:app_id');
+  
+  foreach ($og_attributes as $k => $og_attribute) {
+    $attr = theme_get_setting($og_attribute);
+    if(!empty($attr)) {
+      $element = array(
+        '#tag' => 'meta',
+        '#weight' => ($k + 10),
+        '#attributes' => array(
+          'property' => $og_attribute,
+          'content' => $attr,
+        ),
+      );
+      drupal_add_html_head($element, "qelluchaska_meta_$og_attribute");
+    }
+  }
 }
 
 function qellupunuy_preprocess_search_block_form(&$variables, $hook) {

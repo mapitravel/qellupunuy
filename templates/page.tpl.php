@@ -78,7 +78,7 @@
       <?php if ($site_slogan): ?>
       <?php print $site_slogan; ?>
       <?php endif; ?>
-      <p id="header-mail">Reserve y consulte los hoteles las 24 horas: <strong>hotelesperu@gmail.com</strong></p>
+      <p id="header-mail"><?php print t('Ask and book tours 24/7:'); ?> <strong>hotelesperu@gmail.com</strong></p>
       <div id="menutop">
 	<?php
 		$nice_menu = theme('nice_menus', array(

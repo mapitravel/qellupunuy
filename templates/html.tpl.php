@@ -74,31 +74,9 @@
 <title><?php print $head_title; ?></title>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <?php print $styles; ?><?php print $scripts; ?>
-<?php 
-  	/* 
-		<og>
-  		Open Graphs: General
-		Estos valores deben ser cambiados según el sitio al que se suba el theme
-		
-	*/
-  	if($is_front) : 
-  ?>
-<meta property="og:url" content="http://www.hotelesperu.com" />
-<meta property="og:title" content="Hoteles Per&uacute;: Reservas de Hoteles en todo el Per&uacute;"/>
-<meta property="og:site_name" content="Hoteles Per&uacute;" />
-<meta property="og:image" content="http://media.perunoticias.net/images/logoperuhoteles.jpg" />
-<meta property="og:description" content="Todos los hoteles del Per&uacute;, Hoteles de Lujo, Hoteles 5 Estrellas, Hoteles 4 Estrellas, Hoteles 3 Estrellas, Hoteles 2 Estrellas, Moteles, Reservas de Hoteles las 24 horas del d&iacute;a, Ofertas de Tours en todo el Per&uacute;." />
-<?php
-  	endif;
-	/*
-		</og>
-	*/
-  ?>
-<meta property="fb:app_id" content="228637670553291" />
-
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script type="text/javascript">
-  window.___gcfg = {lang: 'es-419'};
+  window.___gcfg = {lang: '<?php print $GLOBALS['gplang']; ?>'};
 
   (function() {
     var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -111,13 +89,13 @@
 <div id="fb-root"></div>
 <script>
     window.fbAsyncInit = function() {
-      FB.init({appId: '228637670553291', status: true, cookie: true,
+      FB.init({appId: '<?php print theme_get_setting('fb:app_id'); ?>', status: true, cookie: true,
                xfbml: true});
     };
     (function() {
       var e = document.createElement('script'); e.async = true;
       e.src = document.location.protocol +
-        '//connect.facebook.net/es_LA/all.js';
+        '//connect.facebook.net/<?php print $GLOBALS['fblang']; ?>/all.js';
       document.getElementById('fb-root').appendChild(e);
     }());
   </script> 
