@@ -196,7 +196,7 @@ if(drupal_is_front_page()) {
 }
 
 function qellupunuy_preprocess_search_block_form(&$variables, $hook) {
-  $variables['form']['search_block_form']['#title'] = t('');
+  $variables['form']['search_block_form']['#title'] = NULL;
   $variables['form']['search_block_form']['#attributes'] = array('placeholder' => "Ejm: Hotel en Machupicchu");
    
   // Rebuild the rendered version (search form only, rest remains unchanged)
