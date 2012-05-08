@@ -31,7 +31,7 @@ msgstr ""
 
 #: theme-settings.php:27
 msgid "Open Graph Settings"
-msgstr "Configuración de Open Graph"
+msgstr "Configuraciï¿½n de Open Graph"
 
 #: theme-settings.php:34
 msgid "OpenGraph URL"
@@ -39,7 +39,7 @@ msgstr "OpenGraph URL"
 
 #: theme-settings.php:39
 msgid "OpenGraph Title and Site Name"
-msgstr "OpenGraph título y nombre del sitio"
+msgstr "OpenGraph tï¿½tulo y nombre del sitio"
 
 #: theme-settings.php:44
 msgid "OpenGraph Image"
@@ -47,7 +47,7 @@ msgstr "OpenGraph Imagen"
 
 #: theme-settings.php:50
 msgid "OpenGraph Description"
-msgstr "OpenGraph Descripción"
+msgstr "OpenGraph Descripciï¿½n"
 
 #: theme-settings.php:55
 msgid "Facebook AppID"
@@ -67,15 +67,15 @@ msgstr "Una estrella amarilla para la suerte y para que duermas bien"
 
 #: templates/node--hotel.tpl.php:108;111 templates/views/views-view-fields--double-taxonomy-term--page.tpl.php:63 templates/views/views-view-fields--lista-de-hoteles--block-2.tpl.php:54 templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php:63 templates/views/views-view-fields--taxonomy-term--page.tpl.php:63
 msgid "Book now!"
-msgstr "¿Deseas reservar?"
+msgstr "Â¿Deseas reservar?"
 
 #: templates/node--hotel.tpl.php:109
 msgid "Chat now!"
-msgstr "¡Chatea ahora!"
+msgstr "Â¡Chatea ahora!"
 
 #: templates/node--hotel.tpl.php:110
 msgid "Call us!"
-msgstr "¡Llámanos ahora!"
+msgstr "Â¡LlÃ¡manos ahora!"
 
 #: templates/node--hotel.tpl.php:114
 msgid "Share this hotel:"
@@ -83,7 +83,7 @@ msgstr "Comparte el hotel:"
 
 #: templates/node--hotel.tpl.php:126 templates/node--page.tpl.php:111
 msgid "Also available in:"
-msgstr "Disponible también en:"
+msgstr "Disponible tambiÃ©n en:"
 
 #: templates/node--page.tpl.php:99
 msgid "Share:"
