@@ -1,0 +1,119 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  theme-settings.php: n/a
+#  qellupunuy.info: n/a
+#  templates/node--hotel.tpl.php: n/a
+#  templates/views/views-view-fields--double-taxonomy-term--page.tpl.php: n/a
+#  templates/views/views-view-fields--lista-de-hoteles--block-2.tpl.php: n/a
+#  templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php: n/a
+#  templates/views/views-view-fields--taxonomy-term--page.tpl.php: n/a
+#  templates/node--page.tpl.php: n/a
+#  templates/page--front.tpl.php: n/a
+#  templates/page.tpl.php: n/a
+#  templates/views/views-view-fields--filtro--block.tpl.php: n/a
+#  templates/views/views-view-fields--hoteles-en--block.tpl.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-05-07 13:14-0500\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: theme-settings.php:27
+msgid "Open Graph Settings"
+msgstr ""
+
+#: theme-settings.php:34
+msgid "OpenGraph URL"
+msgstr ""
+
+#: theme-settings.php:39
+msgid "OpenGraph Title and Site Name"
+msgstr ""
+
+#: theme-settings.php:44
+msgid "OpenGraph Image"
+msgstr ""
+
+#: theme-settings.php:50
+msgid "OpenGraph Description"
+msgstr ""
+
+#: theme-settings.php:55
+msgid "Facebook AppID"
+msgstr ""
+
+#: theme-settings.php:57
+msgid "You can found this on "
+msgstr ""
+
+#: qellupunuy.info:0
+msgid "Qellu Punuy"
+msgstr ""
+
+#: qellupunuy.info:0
+msgid "Una estrella amarilla para la suerte y para que duermas bien"
+msgstr ""
+
+#: templates/node--hotel.tpl.php:108;111 templates/views/views-view-fields--double-taxonomy-term--page.tpl.php:63 templates/views/views-view-fields--lista-de-hoteles--block-2.tpl.php:54 templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php:63 templates/views/views-view-fields--taxonomy-term--page.tpl.php:63
+msgid "Book now!"
+msgstr ""
+
+#: templates/node--hotel.tpl.php:109
+msgid "Chat now!"
+msgstr ""
+
+#: templates/node--hotel.tpl.php:110
+msgid "Call us!"
+msgstr ""
+
+#: templates/node--hotel.tpl.php:114
+msgid "Share this hotel:"
+msgstr ""
+
+#: templates/node--hotel.tpl.php:126 templates/node--page.tpl.php:111
+msgid "Also available in:"
+msgstr ""
+
+#: templates/node--page.tpl.php:99
+msgid "Share:"
+msgstr ""
+
+#: templates/page--front.tpl.php:81 templates/page.tpl.php:81
+msgid "Ask and book tours 24/7:"
+msgstr ""
+
+#: templates/views/views-view-fields--double-taxonomy-term--page.tpl.php:62 templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php:62 templates/views/views-view-fields--taxonomy-term--page.tpl.php:62
+msgid "From:"
+msgstr ""
+
+#: templates/views/views-view-fields--double-taxonomy-term--page.tpl.php:63 templates/views/views-view-fields--lista-de-hoteles--block-2.tpl.php:54 templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php:63 templates/views/views-view-fields--taxonomy-term--page.tpl.php:63
+msgid "Book"
+msgstr ""
+
+#: templates/views/views-view-fields--double-taxonomy-term--page.tpl.php:64 templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php:64 templates/views/views-view-fields--taxonomy-term--page.tpl.php:64
+msgid "View"
+msgstr ""
+
+#: templates/views/views-view-fields--double-taxonomy-term--page.tpl.php:64 templates/views/views-view-fields--lista-de-hoteles--page-1.tpl.php:64 templates/views/views-view-fields--taxonomy-term--page.tpl.php:64
+msgid "Show this hotel"
+msgstr ""
+
+#: templates/views/views-view-fields--filtro--block.tpl.php:32
+msgid "in"
+msgstr ""
+
+#: templates/views/views-view-fields--hoteles-en--block.tpl.php:36
+msgid "From"
+msgstr ""
+
