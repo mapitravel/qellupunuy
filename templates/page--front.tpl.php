@@ -80,16 +80,8 @@
       <?php endif; ?>
       <p id="header-mail"><?php print t('Ask and book tours 24/7:'); ?> <strong>hotelesperu@gmail.com</strong></p>
       <div id="menutop">
-	<?php
-		$nice_menu = theme('nice_menus', array(
-		  'direction' => 'down',
-		  'depth' => -1,
-		  'menu_name' => 'menu-ciudades',
-		  'id' => 'main',
-		));
-		print $nice_menu['content'];
-	?>
-      </div><div class="clear"></div>
+        <?php print render($page['menutop']); ?>
+	    </div><div class="clear"></div>
     </div>
   </div>
   <div class="clear"></div>

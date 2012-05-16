@@ -11,7 +11,7 @@
 	box-shadow: 0 -3px 5px #9d9d4e;
 	-webkit-box-shadow: 0 -3px 5px #9d9d4e;
 	-moz-box-shadow: 0 -3px 5px #9d9d4e;
-	height: 169px;
+	height: 149px;
 	position: relative;
 }
 
@@ -22,13 +22,13 @@
 #logo {
 	position: absolute;
 	top: 5px;
-	left: 42px;
+	left: 25px;
 }
 
 #logo a {
 	display: block;
-	width: 215px;
-	height: 160px;
+	width: 210px;
+	height: 110px;
 }
 
 #logo a span {
@@ -40,8 +40,8 @@
 	background: rgba(163,90,32,0.9);
 	width: 470px;
 	position: absolute;
-	bottom: 0;
-	right: 10px;
+	bottom: 29px;
+	right: 5px;
 	text-align: center;
 	padding: 6px 0;
 	color: #FFF;
@@ -605,20 +605,12 @@
 }
 
 /* Menu Top */
-#header-inner {
-	height: 209px;
-}
-
-#header-mail {
-	bottom: 39px;
-}
-
 #menutop {
 	position: absolute;
 	left: 0;
 	bottom: 0px;
 	width: 960px;
-	height: 39px;
+	height: 29px;
 	background: #E97B0F;
 }
 
@@ -626,87 +618,84 @@
 	margin-bottom: 0px;
 }
 
-/* Nice Menus Template */
-ul.nice-menu,
-ul.nice-menu ul {
-  border-top: 0 !important; 
-}
-
-ul.nice-menu li {
-  border: 0;
-  border-right: 1px solid #faaa5c;
-  background-color: #E97B0F;
-  list-style-type: none;
-  list-style-image: none;
-  line-height: 38px;
+#mainmenu {
+  margin: 0;
   padding: 0;
 }
 
-ul.nice-menu > li.last {
-  border: 0;
+#mainmenu > li {
+  float: left;
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
 }
 
-ul.nice-menu a {
-  background: #E97B0F;
-  color: #fce6d1;
-  padding: 0 12px;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
+#mainmenu > li > a {
+  border-right: 1px solid #FAAA5C;
+  color: #FFF;
+  display: block;
+  line-height: 29px;
+  padding: 0 24px 0 12px;
+  position: relative;
 }
 
-ul.nice-menu a:hover {
-  color: #E97b0f;
+#mainmenu > li>a:hover,
+.menu-selected {
+  background: #f7bc82 !important;
+  color: #9e5d29;
+}
+
+.menu-selected > a {
+  color: #9e5d29 !important;
+}
+
+#mainmenu > li span {
+  background: url('../images/arrow-down.png');
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  width: 12px;
+}
+
+#mainmenu > li br {
+  display: none;
+}
+
+.menu-content {
   background: #FFF;
+  border: 3px solid #f7bc82;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  padding: 10px 0;
+  top: 28px;
+  left: 0px;
+  -webkit-box-shadow: 3px 3px 10px #888;
 }
 
-ul.nice-menu ul {
-  border: 0 !important;
+.menu-content .menu-block {
+  background: #f7f7f7;
+  display: inline;
+  float: left;
+  margin: 0 10px;
+  width: 200px;
 }
 
-ul.nice-menu ul li {
-  width: 14.5em;
+.menu-content h2 {
+  background: #749536;
+  color: #FFF;  
+  font: bold 13px/1.5em 'Open Sans', Arial, sans-serif;
+  margin-bottom: 1px;
+  padding: 3px 5px;
 }
 
-/******************************
- HORIZONTAL (down) menus
-******************************/
-
-ul.nice-menu-down li {
-  border-top: 0 !important;
-}
-
-ul.nice-menu-down li li {
-  border-top: 0;
-  border-bottom: 1px solid #faaa5c !important;
-}
-
-ul.nice-menu-down ul {
-  left: 0; /* LTR */
-  top: 38px;
-}
-
-ul.nice-menu-down li.menuparent {
-  background: #E97B0F !important;
-
-}
-
-ul.nice-menu-down li.menuparent > a {
-  background: transparent url(../images/arrow-down.png) no-repeat 99% 4px !important;  padding-right: 25px !important;
-}
-
-ul.nice-menu-down li.menuparent:hover {
-  background: none !important;
-}
-
-ul.nice-menu-down li.menuparent > a:hover {
-  background: #FFF url(../images/arrow-down.png) no-repeat 99% -28px !important;
-}
-
-ul.nice-menu-down li li.menuparent {
-  background: none !important;
-}
-
-ul.nice-menu-down li li.menuparent:hover {
-  background: none !important;
+.menu-content li {
+  list-style-image: none;
+  border-bottom: 1px solid #cdcaca;
+  font: bold 11px/1.5em 'Open Sans', Arial, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 3px 5px;
 }

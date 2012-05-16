@@ -1,7 +1,7 @@
 26 de Enero
 =====================
-He instalado el m骴ulo autocomplete y lo he configurado para que s髄o funcione con nodos y taxonom韆.
-He creado el campo field_estrellas en la taxonom韆 de Estrellas como n鷐ero entero.
+He instalado el m贸dulo autocomplete y lo he configurado para que s贸lo funcione con nodos y taxonom铆a.
+He creado el campo field_estrellas en la taxonom铆a de Estrellas como n煤mero entero.
 He creado la vista para las listas de hoteles
 
 27 de Enero
@@ -9,3 +9,16 @@ He creado la vista para las listas de hoteles
 He creado el campo field_foto y field_precio para los hoteles, de modo que
 estos se muestren en listas
 
+10 de Mayo
+=======================
+Se ha mejorado las traducciones
+
+12 de Mayo
+=======================
+Se ha quitado los m贸dulos nice_menus y taxonomy_menu para que se trabaje de una mejor manera.
+
+16 de Mayo
+=======================
+Se tiene que crear el men煤 mediante un bloque y ponerlo en la regi贸n menutop
+Cada menu debe estar de acuerdo al formato que se encuentra en data
+Se ha a帽adido los archivos menu.js y ajax-loader.gif
