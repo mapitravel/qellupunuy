@@ -31,7 +31,7 @@ msgstr ""
 
 #: theme-settings.php:27
 msgid "Open Graph Settings"
-msgstr "Configuraci�n de Open Graph"
+msgstr "Configuración de Open Graph"
 
 #: theme-settings.php:34
 msgid "OpenGraph URL"
@@ -39,7 +39,7 @@ msgstr "OpenGraph URL"
 
 #: theme-settings.php:39
 msgid "OpenGraph Title and Site Name"
-msgstr "OpenGraph t�tulo y nombre del sitio"
+msgstr "OpenGraph título y nombre del sitio"
 
 #: theme-settings.php:44
 msgid "OpenGraph Image"
@@ -47,7 +47,7 @@ msgstr "OpenGraph Imagen"
 
 #: theme-settings.php:50
 msgid "OpenGraph Description"
-msgstr "OpenGraph Descripci�n"
+msgstr "OpenGraph Descripción"
 
 #: theme-settings.php:55
 msgid "Facebook AppID"

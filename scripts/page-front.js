@@ -70,14 +70,5 @@
 			more.text(more.attr('title'));
 			more.appendTo($('<p></p>').addClass('more-hotels').appendTo(view_content));
 		});
-/*
-		$('.noticia .share').hover(
-			function() {
-				$($(this).parent().parent()).find('.noticia-social').show();
-			},
-			function() {
-				$($(this).parent().parent()).find('.noticia-social').hide();
-			}
-		);*/
-	});
+  });
 })(jQuery); 

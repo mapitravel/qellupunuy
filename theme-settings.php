@@ -11,17 +11,6 @@ function qellupunuy_form_system_theme_settings_alter(&$form, &$form_state)  {
 
   // Create the form using Forms API: http://api.drupal.org/api/7
 
-  /* -- Delete this line if you want to use this setting
-  $form['itegracion_example'] = array(
-    '#type'          => 'checkbox',
-    '#title'         => t('itegracion sample setting'),
-    '#default_value' => theme_get_setting('itegracion_example'),
-    '#description'   => t("This option doesn't do anything; it's just an example."),
-  );
-  // */
-  
-  global $base_root;
-  
   $form['og'] = array(
     '#type' => 'fieldset',
     '#title' => t('Open Graph Settings'),
@@ -55,6 +44,24 @@ function qellupunuy_form_system_theme_settings_alter(&$form, &$form_state)  {
     '#title' => t('Facebook AppID'),
     '#default_value' => theme_get_setting('fb:app_id'),
     '#description' => t('You can found this on ') . 'http://developers.facebook.com/apps',
+  );
+  
+  $form['qellupunuy'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Mapitravel Settings'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+    '#weight' => 0,
+  );  
+  $form['qellupunuy']['qpexternal'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show external hotels'),
+    '#default_value' => theme_get_setting('qpexternal'),
+  );  
+  $form['qellupunuy']['qpurl'] = array(
+    '#type' => 'textfield',
+    '#title' => t('JSON URL for Hotels'),
+    '#default_value' => theme_get_setting('qpurl'),
   );
 
   // Remove some of the base theme's settings.

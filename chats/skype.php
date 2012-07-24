@@ -7,10 +7,9 @@
 </head>
 <body>
 <div class="centro">
-  <h1>Converse con nosotros mediante<br />
-    Skype</h1>
-      <p> Llamar a <strong>reservashotelesperu</strong><br />
-    <a href="skype:reservashotelesperu?call"><img src="http://media.perunoticias.net/images/skypeon.png" style="border: none;" width="182" height="44" alt="My status" /></a> </p>
+  <h1>Converse con nosotros mediante<br />Skype</h1>
+  <p> Llamar a <strong>reservashotelesperu</strong><br />
+  <a href="skype:reservashotelesperu?call"><img src="http://media.perunoticias.net/images/skypeon.png" style="border: none;" width="182" height="44" alt="My status" /></a> </p>
   <p><strong>N</strong>ecesita <a href="http://www.skype.com/download/skype/" target="_blank">instalar el software</a> de Skype para podernos contactar.</p>
 </div>
 </body>

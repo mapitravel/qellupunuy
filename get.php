@@ -1,6 +1,9 @@
 <?php
-function curl_file_get_contents($url)
-{
+/**
+ * @file
+ * Get prices.
+ */
+function curl_file_get_contents($url) {
     $ch = curl_init();
     $timeout = 5; // set to zero for no timeout
     curl_setopt($ch, CURLOPT_URL, $url);

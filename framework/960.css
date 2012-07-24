@@ -121,22 +121,17 @@
 /* `Prefix Extra Space >> Global
 ----------------------------------------------------------------------------------------------------*/
 
-
 .container_16 .prefix_4 {
 	padding-left: 240px;
 }
-
 
 .container_16 .prefix_8 {
 	padding-left: 480px;
 }
 
-
 .container_16 .prefix_12 {
 	padding-left: 720px;
 }
-
-
 
 /* `Prefix Extra Space >> 16 Columns
 ----------------------------------------------------------------------------------------------------*/
@@ -192,11 +187,9 @@
 /* `Suffix Extra Space >> Global
 ----------------------------------------------------------------------------------------------------*/
 
-
 .container_16 .suffix_4 {
 	padding-right: 240px;
 }
-
 
 .container_16 .suffix_8 {
 	padding-right: 480px;
@@ -205,7 +198,6 @@
 .container_16 .suffix_12 {
 	padding-right: 720px;
 }
-
 
 /* `Suffix Extra Space >> 16 Columns
 ----------------------------------------------------------------------------------------------------*/
@@ -261,16 +253,13 @@
 /* `Push Space >> Global
 ----------------------------------------------------------------------------------------------------*/
 
-
 .container_16 .push_4 {
 	left: 240px;
 }
 
-
 .container_16 .push_8 {
 	left: 480px;
 }
-
 
 .container_16 .push_12 {
 	left: 720px;
@@ -330,16 +319,13 @@
 /* `Pull Space >> Global
 ----------------------------------------------------------------------------------------------------*/
 
-
 .container_16 .pull_4 {
 	left: -240px;
 }
 
-
 .container_16 .pull_8 {
 	left: -480px;
 }
-
 
 .container_16 .pull_12 {
 	left: -720px;
@@ -400,7 +386,6 @@
 ----------------------------------------------------------------------------------------------------*/
 
 /* http://sonspring.com/journal/clearing-floats */
-
 .clear {
 	clear: both;
 	display: block;
@@ -411,7 +396,6 @@
 }
 
 /* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
-
 .clearfix:after {
 	clear: both;
 	content: ' ';

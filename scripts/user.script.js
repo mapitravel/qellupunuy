@@ -42,7 +42,6 @@ function sprintf() {
 	return str;
 }
 
-
 var paramsChat = 'location=0,status=0,scrollbars=0,width=430,height=500';
 var paramsSkype = 'location=0,status=0,scrollbars=0,width=450,height=350';
 
@@ -63,9 +62,8 @@ var iother = {
 	infowindowanchor: [12,0]
 };
 
-/* Function Popup Window */ 
-(function($) {
-		
+// JQuery Popup.
+(function($) {		
 	$.fn.popup = function(params, href) {
 		href = (typeof href == 'undefined') ? $(this).attr('href') : href;
 		function clickHandler(e) {
@@ -83,66 +81,57 @@ var iother = {
 	}
 })(jQuery); 
 
-
 // Popup Settings
 (function($) {
-
-	var sharebarHandler = function() {
-	
+	var sharebarHandler = function() {	
 		var ventana = $(window).width();
-		// co es el tamanio de el espacio a cada lado del centro y se le resta 83 por el tamanio del sharebar
-		// 83 es el tamanio de Share bar y 960 es el tamanio de #main
+		// co es el tamanio de el espacio a cada lado del centro y se le resta 83 por el tamanio del sharebar.
+		// 83 es el tamanio de Share bar y 960 es el tamanio de #main.
 		var co = parseInt((ventana-960)/2) - 83;
 		// Posicionamos el Sharebar
 		$('#sharebar').css('left', co);
 	}
 
 	$(document).ready(function() { 
-	
-		//Tour prices tables
+		//Tour prices tables.
 		$.ajax({
 			url: "/sites/all/themes/qellupunuy/get.php",
-			type:"GET",
-			success:  function(cambio){
+			type: "GET",
+			success: function(cambio){
 				$(".fprice").each(function(){
-					$(this).css("font-size","11px");
-					price=0;
-					price=parseInt($(this).text());
-					//opera y reemplaza precios
-					$(this).text("USD "+price).next("td").text("S/."+parseInt(price*cambio)).css("font-size","11px"); 
+					$(this).css("font-size", "11px");
+					price = 0;
+					price = parseInt($(this).text());
+					// Opera y reemplaza precios.
+					$(this)
+            .text("USD " + price)
+            .next("td")
+            .text("S/." + parseInt(price * cambio))
+            .css("font-size", "11px");
 				});
 			}
 		})	
-			
-		// Popup
+
+		// Popup.
 		$('.live-chat').popup(paramsChat);
 		$('.live-skype').popup(paramsSkype);
-	
-		
-		// Hide Blocks
+
+		// Hide Blocks.
 		$('#welcome .hide').click(function() {
 			$('#welcome').hide('slow');
 			return false;
 		}) ;
-		
-		$('#sharebar-links .hide').click(function() {
-			$('#sharebar-links').hide('slow');
-			$('#sharebar-show').show('slow');
-			return false;
-		}) ;
-		
-		$('#sharebar-show .hide').click(function() {
-			$('#sharebar-show').hide('slow');
-			$('#sharebar-links').show('slow');
-			return false;
-		}) ;
+    
+    // Making simple link item clickeable.
+		$('.simple-item').click(function () {
+			l = $(this).find('a').attr('href');
+			location.href = l;
+		});
 
 		sharebarHandler();
-
 	});
-
 	$(window).resize(function() {
-          sharebarHandler();
-        });
+    sharebarHandler();
+  });
 
 })(jQuery); 

@@ -37,75 +37,6 @@
 	color: #FFF;
 }
 
-table {
-  border: 0 !important;
-}
-
-table.simple-prices td,
-table.simple-prices th {
-  border: 0 !important;
-}
-
-.simple-item {
-	margin: 0;
-	list-style-image: none;
-	list-style-type: none;
-	border-bottom: 1px solid #cdcaca;
-}
-
-.simple-item:hover {
-	background: #f3f3f3;
-}
-
-.simple-item td,
-.simple-item th {
-  padding: 1px 0 !important;
-}
-
-.simple-stars {
-  background: url("../images/simple-estrellas.png") no-repeat;
-  width: 50px;
-  height: 8px;
-  padding: 0;
-	display: inline-block;
-	font-weight: bold;
-}
-
-.simple-stars-data {
-  width: 50px;
-}
-
-.simple-stars em {
-	display: none;
-}
-
-.simple-stars-5 {
-        background-position: 0 -32px;
-}
-.simple-stars-4 {
-        background-position: 0 -24px;
-}
-.simple-stars-3 {
-        background-position: 0 -16px;
-}
-.simple-stars-2 {
-        background-position: 0 -8px;
-}
-.simple-stars-1 {
-        background-position: 0 0px;
-}
-
-.simple-name {
-	font-weight: bold;
-	font-size: 12px;
-  width: 195px;
-}
-
-.simple-price {
-  font-size: 12px;
-  color: #749536;
-}
-
 /* welcome */
 #welcome {
 	margin-bottom: 10px;
@@ -128,11 +59,11 @@ table.simple-prices th {
 }
 
 #welcome .description a {
-        border-bottom: 1px solid #e1ecfa;
+  border-bottom: 1px solid #e1ecfa;
 }
 
 #welcome .description a:hover {
-        color: #a96833;
+  color: #a96833;
 }
 
 #welcome .button {
@@ -173,44 +104,44 @@ table.simple-prices th {
 }
 
 .noticia {
-	background: #f3f3f3;
-        margin-bottom: 15px;
-	position: relative;
+  background: #f3f3f3;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .noticia h3 {
-        font-size: 13px;
-	font-weight: bold;
-        border-bottom: 1px solid #e5e5e5;
-        margin-bottom: 2px;
-	padding-bottom: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 .noticia h3 a {
-        color: #000;
+  color: #000;
 }
 
 .noticia h3 a:hover {
-        color: #a35a20;
+  color: #a35a20;
 }
 
 .noticia-fecha {
-        font-size: 10px;
-        color: #8d8d8d;
-        text-align: right;
-        margin-bottom: 2px;
+  font-size: 10px;
+  color: #8d8d8d;
+  text-align: right;
+  margin-bottom: 2px;
 }
 
 .noticia-social {
-	display: none;
-	background: #FFF;
-        border: 1px solid #cdcaca;
-        width: 110px;
-	bottom: -45px;
-	right: -40px;
-	position: absolute;
-	padding: 4px 0 0 0;
-	z-index: 100;
+  display: none;
+  background: #FFF;
+  border: 1px solid #cdcaca;
+  width: 110px;
+  bottom: -45px;
+  right: -40px;
+  position: absolute;
+  padding: 4px 0 0 0;
+  z-index: 100;
 }
 
 .noticia-actions .share:hover .noticia-social{
@@ -219,14 +150,14 @@ table.simple-prices th {
 
 .noticia-actions .more {
   background: url("../images/ico-more.png") no-repeat 2px 4px;
-	padding-left: 15px;
-	padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 
 .noticia-actions .share {
-    background: url("../images/ico-share.png") no-repeat 2px 4px;
-	padding-left: 15px;
-	padding-right: 10px;
+  background: url("../images/ico-share.png") no-repeat 2px 4px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 
 .more-hotels {
@@ -234,4 +165,3 @@ table.simple-prices th {
 	font-size: 12px;
 	font-weight: bold;
 }
-

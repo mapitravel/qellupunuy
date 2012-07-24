@@ -9,10 +9,19 @@
 #header-inner {
 	background: #FFF url('../images/bg-header-es.jpg') no-repeat  top right;
 	box-shadow: 0 -3px 5px #9d9d4e;
-	-webkit-box-shadow: 0 -3px 5px #9d9d4e;
-	-moz-box-shadow: 0 -3px 5px #9d9d4e;
-	height: 149px;
+	/*height: 149px;*/
+	height: 178px;
 	position: relative;
+  -webkit-box-shadow: 0 -3px 5px #9d9d4e;
+	-moz-box-shadow: 0 -3px 5px #9d9d4e;
+}
+
+.banner-es #header-inner {
+  background-image: url('../images/bg-header-es.jpg') !important;
+}
+
+.banner-pt-br #header-inner {
+  background-image: url('../images/bg-header-br.jpg') !important;
 }
 
 #slogan {
@@ -27,8 +36,8 @@
 
 #logo a {
 	display: block;
-	width: 210px;
-	height: 110px;
+  height: 110px;
+	width: 210px;	
 }
 
 #logo a span {
@@ -38,15 +47,15 @@
 #header-mail {
 	background: #a35a20;
 	background: rgba(163,90,32,0.9);
-	width: 470px;
-	position: absolute;
-	bottom: 29px;
-	right: 5px;
+  bottom: 58px; /*bottom: 29px;*/
+  color: #FFF;
+  font-size: 14px;
+  margin: 0;
+  padding: 6px 0;
+  position: absolute;
+  right: 5px;
 	text-align: center;
-	padding: 6px 0;
-	color: #FFF;
-	font-size: 14px;
-	margin: 0;
+	width: 470px;
 }
 
 .not-front #content {
@@ -54,10 +63,10 @@
 }
 
 #content {
-	background: #FFF;
-	box-shadow: 0 0 5px #9d9d4e;
-	-webkit-box-shadow: 0 0 5px #9d9d4e;
+  -webkit-box-shadow: 0 0 5px #9d9d4e;
 	-moz-box-shadow: 0 0 5px #9d9d4e;
+	background: #FFF;
+	box-shadow: 0 0 5px #9d9d4e;	
 	position: relative;
 }
 
@@ -90,6 +99,7 @@
 	margin-left: 10px;
 	background: #f3f3f3;
 	padding: 10px;
+	width: 150px;
 }
 
 #tour-bar h5 {
@@ -143,11 +153,8 @@
 	padding: 10px 10px 10px 40px; /* LTR */
 }
 
-
 /* Footer */
-
 /* Chat Olark */
-
 #habla_panel_div {
 /* posicion chat olark*/
 	margin-bottom: -29px;
@@ -195,7 +202,6 @@
 	color: #8d8787;
 	text-align: right;
 }
-
 
 .testimonio blockquote:before {
 	content: "- ";
@@ -386,7 +392,6 @@
 	border-bottom: 1px solid #bdbaba;
 }
 
-
 .hotel-content {
 	width: 460px; /* Override */
 }
@@ -469,26 +474,27 @@
 	width: 103px; /*Override*/
 	margin-top: 5px;
 }
-/*nuevo de ofertas*/
-.desde{
+
+/* nuevo de ofertas */
+.desde {
 	font: 18px/1.2em 'Open Sans', Arial, sans-serif;
 	color: #749536;
 	margin-top: 4px;
-	}
+}
 .hotel-actions .button {
-        font-size: 12px;
-        color: #FFF;
-        padding: 5px 6px;
-        display: block;
-        text-align: center;
+  font-size: 12px;
+  color: #FFF;
+  padding: 5px 6px;
+  display: block;
+  text-align: center;
 }
 
 .hotel-actions .button {
-        background: #e97b0f;
+  background: #e97b0f;
 }
 
 .hotel-actions .button:hover {
-        background: #a96833;
+  background: #a96833;
 }
 
 #hotel-banner {
@@ -509,13 +515,13 @@
 }
 
 .hotel-wide .hotel-meta {
-        border: 0 !important; 
-        padding: 0 !important;
-        height: auto !important;
-	float: left;
-	display: inline;
-	width: 100px;
-	margin-left: 10px;
+  border: 0 !important; 
+  padding: 0 !important;
+  height: auto !important;
+  float: left;
+  display: inline;
+  width: 100px;
+  margin-left: 10px;
 }
 
 .hotel-wide .hotel-meta li {
@@ -610,7 +616,8 @@
 	left: 0;
 	bottom: 0px;
 	width: 960px;
-	height: 29px;
+	/*height: 29px;*/
+	height: 58px;
 	background: #E97B0F;
 }
 
@@ -636,7 +643,8 @@
   color: #FFF;
   display: block;
   line-height: 29px;
-  padding: 0 24px 0 12px;
+  /*padding: 0 24px 0 12px;*/
+  padding: 0 22px 0 10px;
   position: relative;
 }
 
@@ -675,6 +683,10 @@
   -webkit-box-shadow: 3px 3px 10px #888;
 }
 
+.second .menu-content {
+  top: 56px;
+}
+
 .menu-content .menu-block {
   background: #f7f7f7;
   display: inline;
@@ -698,4 +710,84 @@
   list-style-type: none;
   margin: 0;
   padding: 3px 5px;
+}
+
+/* Simple Prices */
+table.simple-prices {
+  border: 0 !important;
+}
+
+.front table.simple-prices td,
+.front table.simple-prices th {
+  border: 0 !important;
+}
+
+.simple-item {
+  margin: 0;
+  list-style-image: none;
+  list-style-type: none;
+  border-bottom: 1px solid #cdcaca;
+}
+
+.simple-item:hover {
+        background: #f3f3f3;
+	cursor: pointer;
+}
+
+.simple-item td,
+.simple-item th {
+	padding: 2px 4px;
+}
+
+.front .simple-item td,
+.front .simple-item th {
+  padding: 1px 0 !important;
+}
+
+.simple-stars {
+  background: url("../images/simple-estrellas.png") no-repeat;
+  width: 50px;
+  height: 8px;
+  padding: 0;
+  display: inline-block;
+  font-weight: bold;
+}
+.front .simple-stars-data {
+  width: 50px;
+}
+
+.simple-stars em {
+  display: none;
+}
+
+.simple-stars-5 {
+  background-position: 0 -32px;
+}
+.simple-stars-4 {
+  background-position: 0 -24px;
+}
+.simple-stars-3 {
+  background-position: 0 -16px;
+}
+.simple-stars-2 {
+  background-position: 0 -8px;
+}
+.simple-stars-1 {
+  background-position: 0 0px;
+}
+
+.simple-name {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.front .simple-name {
+	font-weight: bold;
+	font-size: 12px;
+	width: 195px;
+}
+
+.front .simple-price {
+  font-size: 12px;
+  color: #749536;
 }
